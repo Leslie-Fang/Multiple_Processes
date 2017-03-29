@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/leslie/testcode/cpp/hwk4/main.cpp
+iostream
+-
+stdlib.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/ipc.h
+-
+sys/shm.h
+-
+sys/sem.h
+-
+strstream
+-
+string
+-
+
