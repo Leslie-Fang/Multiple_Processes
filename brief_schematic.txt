@@ -1,0 +1,10 @@
+The worker process of the algorithm:
+
+1. read the input arguments:
+	if the input didn't satisfy the requirement, return;
+2. Initialize the shared memory and the semaphores:
+	totally three different shared memory: The first one is used to store the number which is under the calculation; the second one is used to record the result of the f[] function; The thrid one is used to record the result of the prime number between the up and the low limit.
+3. based on the input number of processes, do the fork operation to generate the exact number of process
+4. In each process, we would calculate how many prime factor between[2,1000], this number has. And store result into the shared 	memory1.
+5. If the number is between the low and up limit, we would judge if the number is prime number or not. If so, store it into 		shared memory2.
+6. Finally, after all the children processes are done. We would output the result in shared memory2 and shared memory3.
